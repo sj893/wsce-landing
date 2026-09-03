@@ -179,12 +179,17 @@
     .device-grid { grid-template-columns: repeat(4, 1fr); gap: 8px; }
   }
   .device-item {
-    display: flex; flex-direction: column; align-items: center; gap: 8px;
-    padding: 16px 8px; border-radius: 12px;
+    display: flex; flex-direction: column; align-items: center; gap: 6px;
+    padding: 12px 6px; border-radius: 12px;
     background: #f8f9fb;
   }
   .device-item svg {
-    width: 56px; height: 56px;
+    width: 44px; height: 44px;
+  }
+  @media (max-width: 480px) {
+    .device-item svg { width: 36px; height: 36px; }
+    .device-item { padding: 10px 4px; gap: 4px; }
+    .device-label { font-size: 10px; }
   }
   .device-label {
     font-size: 11px; color: #6b7280; text-align: center; font-weight: 500;
